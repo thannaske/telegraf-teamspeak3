@@ -44,6 +44,6 @@ The script outputs collected metrics about all found Teamspeak 3 instances in In
 # Usage example: Visualize Metrics with Grafana
 ![Grfana Example](https://i.gyazo.com/f6f5e28fbb8ea56c8cacedacc64bd6b8.png)
 
-# Ackknowledgments
+# Acknowledgments
 go-ts3: https://github.com/multiplay/go-ts3  
 This library provides all necessary methods to connect to a Teamspeak 3 ServerQuery. During my work on this repository I added a few methods for bandwidth and packetloss metering at it.
