@@ -4,5 +4,8 @@ Telegraf-executable script to collect metrics of all virtual server instances of
 # Usage instruction
 Clone, build and store somewhere on your server. Add the executable to the `exec` input plugin of Influx Telegraf. Don't set the execution timeout too low when you have multiple server instances running.
 
-# Usage Example: Visualize Metrics with Grafana
+# Output
+The script outputs collected metrics about all found Teamspeak 3 instances in Influx Line format.
+
+# Usage example: Visualize Metrics with Grafana
 ![Grfana Example](https://i.gyazo.com/f6f5e28fbb8ea56c8cacedacc64bd6b8.png)
