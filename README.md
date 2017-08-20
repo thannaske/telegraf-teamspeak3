@@ -43,6 +43,7 @@ The script outputs collected metrics about all found Teamspeak 3 instances in In
 
 # Usage example: Visualize Metrics with Grafana
 ![Grfana Example](https://i.gyazo.com/f6f5e28fbb8ea56c8cacedacc64bd6b8.png)
+You find the example dashboard as `grafana-dashboard.json` in this repository.
 
 # Acknowledgments
 go-ts3: https://github.com/multiplay/go-ts3  
