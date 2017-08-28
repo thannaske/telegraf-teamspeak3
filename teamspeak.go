@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/multiplay/go-ts3"
+	"github.com/thannaske/go-ts3"
 	"os"
 )
 
