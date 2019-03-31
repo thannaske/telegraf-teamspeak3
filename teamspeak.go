@@ -21,19 +21,19 @@ func main() {
 	c, err := ts3.NewClient(*serverPtr)
 
 	if err != nil {
-		fmt.Println("[Error] Could not establish server query connection to", *serverPtr)
+		fmt.Println(os.Stderr, "[Error] Could not establish server query connection to", *serverPtr)
 		os.Exit(1)
 	}
 
 	defer c.Close()
 
 	if err := c.Login(*usernamePtr, *passwordPtr); err != nil {
-		fmt.Println("[Error] Authentication failure")
+		fmt.Println(os.Stderr, "[Error] Authentication failure")
 		os.Exit(1)
 	}
 
 	if serverList, err := c.Server.ExtendedList(); err != nil {
-		fmt.Println("[Error] Could not iterate through Teamspeak 3 server instances")
+		fmt.Println(os.Stderr, "[Error] Could not iterate through Teamspeak 3 server instances")
 		os.Exit(1)
 	} else {
 		for _, server := range serverList {
@@ -41,7 +41,7 @@ func main() {
 			err := c.Use(server.ID)
 
 			if err != nil {
-				fmt.Println("[Error] Could not select Teamspeak 3 server instance by ID")
+				fmt.Println(os.Stderr, "[Error] Could not select Teamspeak 3 server instance by ID")
 				os.Exit(1)
 			}
 
