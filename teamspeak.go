@@ -41,7 +41,7 @@ func main() {
 			err := c.Use(server.ID)
 
 			if err != nil {
-                		if err.Error()=="server is not running (1033)" {
+                		if err.Error() == "server is not running (1033)" {
                     			continue // ignore offline servers
                 		} else {
                     			fmt.Println("[Error] Could not select Teamspeak 3 server instance by ID")
